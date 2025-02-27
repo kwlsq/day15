@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Navbar from "../../../../components/navbar";
+import Ribbon from "./Ribbon";
 
 const HeroSection = () => {
   const marquee = keyframes`
@@ -40,6 +41,7 @@ const HeroSection = () => {
       <Navbar />
       <Image src="src\assets\photo.webp" alt="photo of the web owner" />
       <RunningText>Webflow Developer - UI/UX Designer</RunningText>
+      <Ribbon />
     </HeroWrapper>
   );
 };
