@@ -23,7 +23,8 @@ const HeroSection = () => {
   `;
 
   const Image = styled.img`
-    height: 100%;
+    height: 90%;
+    padding-top: 5em;
   `;
 
   const RunningText = styled.h1`
