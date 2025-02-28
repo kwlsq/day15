@@ -7,12 +7,11 @@ const AboutSection = () => {
     width: 100vw;
     display: flex;
     justify-content:space-between;
-    gap:25%;
   `;
   return (
     <AboutWrapper>
       <h3 className="text-[40px] font-medium">About</h3>
-      <p className="text-[27px] font-normal">
+      <p className="text-[27px] font-normal ml-80">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
