@@ -24,7 +24,7 @@ const HeroSection = () => {
   `;
 
   const Image = styled.img`
-    height: 90%;
+    height: 100%;
     padding-top: 5em;
   `;
 
