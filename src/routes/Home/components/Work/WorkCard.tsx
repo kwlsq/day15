@@ -12,7 +12,9 @@ const WorkCard: FC<WorkCardProps> = ({ work }) => {
         <div className="text-[60px] font-normal pb-2">{work.title}</div>
         <div className="text-[18px] font-normal">
           {work.description.map((desc: string, index: number) => (
-            <span key={index}>{desc}</span>
+            <span key={index}>
+              {desc} {index !== work.description.length - 1 && " - "}
+            </span>
           ))}
         </div>
       </div>
