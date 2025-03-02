@@ -8,13 +8,14 @@ const Ribbon = () => {
     height: 95.14px;
     width: fit-content;
     font-size: 4em;
-    right: -350px;
+    right: -330px;
     bottom: 40%;
     cursor: pointer;
     padding: 0 15px;
     box-sizing: border-box;
     color: #ffffff;
-
+    display:flex;
+    align-items:center;
     transition: right 0.3s ease-in-out; 
 
     &:hover {
