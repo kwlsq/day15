@@ -1,15 +1,8 @@
-import styled from "styled-components";
+import { TextWrapper } from "../../../../consts/UtilStyling";
 
 const AboutSection = () => {
-  const AboutWrapper = styled.div`
-    box-sizing: border-box;
-    padding: 8em 8.5em;
-    width: 100vw;
-    display: flex;
-    justify-content:space-between;
-  `;
   return (
-    <AboutWrapper>
+    <TextWrapper>
       <h3 className="text-[40px] font-medium">About</h3>
       <p className="text-[27px] font-normal ml-80">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -18,7 +11,7 @@ const AboutSection = () => {
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur.
       </p>
-    </AboutWrapper>
+    </TextWrapper>
   );
 };
 
