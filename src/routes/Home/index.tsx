@@ -1,4 +1,5 @@
 import AboutSection from "./components/About";
+import FooterSection from "./components/Footer";
 import GallerySection from "./components/Gallery";
 import HeroSection from "./components/Hero";
 import TestimonialSection from "./components/Testimonials";
@@ -12,6 +13,7 @@ const Home = () => {
       <WorkSection/>
       <GallerySection/>
       <TestimonialSection/>
+      <FooterSection/>
     </>
   );
 };
