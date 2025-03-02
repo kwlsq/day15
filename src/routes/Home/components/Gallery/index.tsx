@@ -4,7 +4,6 @@ import {
 } from "../../../../consts/ImagesList";
 
 const GallerySection = () => {
-  console.log(galleryListRow2);
   return (
     <div className="py-30">
       <div className="flex space-x-4 ">
