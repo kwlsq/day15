@@ -24,6 +24,7 @@ const ContactForms = () => {
           message: Yup.string().required("Message is required"),
         })}
         onSubmit={(values, { setSubmitting }) => {
+          console.log(values)
           setSubmitting(false);
         }}
       >
