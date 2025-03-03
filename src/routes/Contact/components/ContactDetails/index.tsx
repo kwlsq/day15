@@ -1,9 +1,11 @@
+import smallProfPic from "../../../../../public/prof-pic-small.png";
+
 const ContactDetails = () => {
   return (
     <div>
       <img
         width={365}
-        src="../../../../public/prof-pic-small.png"
+        src={smallProfPic}
         alt="rounded profile picture of ayush raj"
         className="rounded-full"
       />

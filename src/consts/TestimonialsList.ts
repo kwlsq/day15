@@ -1,3 +1,6 @@
+import pp1 from "../../public/pp1.webp"
+import pp2 from "../../public/pp2.webp"
+
 export interface TESTIMONIALS {
     id: number;
     description: string;
@@ -16,7 +19,7 @@ export const testimonialsList: TESTIMONIALS[] = [
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur."`,
-        photoSource: "../../public/pp1.webp",
+        photoSource: pp1,
         alt: "photo of ayus raj",
         name: "Ayush Raj",
         position: "VP of Marketing @ Webflow",
@@ -29,7 +32,7 @@ export const testimonialsList: TESTIMONIALS[] = [
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur."`,
-            photoSource: "../../public/pp2.webp",
+        photoSource: pp2,
         alt: "photo of Alex Cattoni",
         name: "Alex Cattoni",
         position: "Founder @ CopyPossy",

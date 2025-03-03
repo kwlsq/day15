@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import ButtonCapsule from "../../../../components/ButtonCapsule";
 import Footer from "../../../../components/footer";
+import smallProfPic from "../../../../../public/prof-pic-small.png";
 
 const FooterSection = () => {
   return (
@@ -11,7 +12,7 @@ const FooterSection = () => {
           <span className="flex items-center gap-4 text-[80px]">
             <img
               width={100}
-              src="../../../../public/prof-pic-small.png"
+              src={smallProfPic}
               alt="photo of website owner"
               className="rounded-full"
             />
