@@ -11,6 +11,7 @@ const TestimonialSection = () => {
             <p className="text-[27px] font-normal">{testimonial.description}</p>
             <div className="flex gap-5 pt-5">
               <img
+                width={100}
                 src={testimonial.photoSource}
                 alt={testimonial.alt}
                 className="rounded-full"

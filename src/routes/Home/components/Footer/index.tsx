@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import ButtonCapsule from "../../../../components/ButtonCapsule";
 import Footer from "../../../../components/footer";
 
@@ -7,20 +8,23 @@ const FooterSection = () => {
       <div className="flex justify-between items-center font-medium mb-30">
         <div>
           <p className="text-[80px]">Have something in mind?</p>
-          <span className="flex items-center gap-2 text-[80px]">
+          <span className="flex items-center gap-4 text-[80px]">
             <img
-              src="https://placehold.co/80x80/webp"
+              width={100}
+              src="../../../../public/prof-pic-small.png"
               alt="photo of website owner"
               className="rounded-full"
             />
             let’s build it together.
           </span>
         </div>
-        <ButtonCapsule
-          text="Get in touch"
-          bgColor="#F4F7FA"
-          fontColor="#0B0C0E"
-        ></ButtonCapsule>
+        <NavLink to="/contact">
+          <ButtonCapsule
+            text="Get in touch"
+            bgColor="#F4F7FA"
+            fontColor="#0B0C0E"
+          ></ButtonCapsule>
+        </NavLink>
       </div>
       <Footer />
     </div>

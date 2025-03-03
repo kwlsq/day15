@@ -16,7 +16,7 @@ export const testimonialsList: TESTIMONIALS[] = [
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur."`,
-        photoSource: "https://placehold.co/64x64/webp",
+        photoSource: "../../public/pp1.webp",
         alt: "photo of ayus raj",
         name: "Ayush Raj",
         position: "VP of Marketing @ Webflow",
@@ -29,7 +29,7 @@ export const testimonialsList: TESTIMONIALS[] = [
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur."`,
-        photoSource: "https://placehold.co/64x64/webp",
+            photoSource: "../../public/pp2.webp",
         alt: "photo of Alex Cattoni",
         name: "Alex Cattoni",
         position: "Founder @ CopyPossy",

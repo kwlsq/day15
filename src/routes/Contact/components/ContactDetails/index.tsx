@@ -2,7 +2,8 @@ const ContactDetails = () => {
   return (
     <div>
       <img
-        src="https://placehold.co/256x256/webp"
+        width={365}
+        src="../../../../public/prof-pic-small.png"
         alt="rounded profile picture of ayush raj"
         className="rounded-full"
       />
