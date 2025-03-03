@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Navbar = () => {
@@ -6,25 +7,33 @@ const Navbar = () => {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    padding:2em;
+    padding: 2em;
   `;
 
   const FlexSpaceBetween = styled.div`
     display: flex;
     justify-content: space-between;
-    gap:3em;
+    gap: 3em;
   `;
+
   const NavText = styled.p`
     font-weight: 400;
+    &:hover {
+      cursor: pointer;
+    }
   `;
 
   return (
     <Navbar>
       <NavText>@Ayush Barnwal</NavText>
       <FlexSpaceBetween>
-        <NavText>About</NavText>
+        <NavText>
+          <NavLink to="/">About</NavLink>
+        </NavText>
         <NavText>Work</NavText>
-        <NavText>Contact</NavText>
+        <NavText>
+          <NavLink to="/contact">Contact</NavLink>
+        </NavText>
       </FlexSpaceBetween>
     </Navbar>
   );
