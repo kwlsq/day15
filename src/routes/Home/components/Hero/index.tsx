@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import Navbar from "../../../../components/navbar";
 import Ribbon from "./Ribbon";
+import HeroImage from "../../../../assets/photo.webp";
 
 const HeroSection = () => {
   const marquee = keyframes`
@@ -39,7 +40,7 @@ const HeroSection = () => {
   return (
     <HeroWrapper>
       <Navbar />
-      <Image src="src\assets\photo.webp" alt="photo of the web owner" />
+      <Image src={HeroImage} alt="photo of the web owner" />
       <RunningText>Webflow Developer - UI/UX Designer</RunningText>
       <Ribbon />
     </HeroWrapper>
