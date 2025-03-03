@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { WORKS } from "../../../../consts/WorksList";
+import IconArrowUpright from "../../../../assets/ic-arrow-upright.svg";
 
 interface WorkCardProps {
   work: WORKS;
@@ -21,7 +22,7 @@ const WorkCard: FC<WorkCardProps> = ({ work }) => {
       <div className="border border-[#3C3D3E] rounded-full p-10 hover:bg-[#0B0C0E] group transition-all duration-300 cursor-pointer">
         <img
           className="w-6 h-6 transition-all duration-300 group-hover:invert"
-          src="src/assets/ic-arrow-upright.svg"
+          src={IconArrowUpright}
           alt="arrow up right icon"
         />
       </div>
