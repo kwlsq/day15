@@ -6,11 +6,11 @@ import {
 const GallerySection = () => {
   return (
     <div className="py-30">
-      <div className="flex space-x-4 ">
+      <div className="flex space-x-10 ">
         {galleryListRow1.map((image, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-[444px] h-[306px] bg-[#C7D0D9] px-[48px] py-[56px] shadow-lg"
+            className="flex-shrink-0 w-[444px] h-[306px] bg-[#C7D0D9] px-[48px] py-[56px] shadow-lg hover:shadow-2xl cursor-pointer"
           >
             <img
               src={image.src}
@@ -20,11 +20,11 @@ const GallerySection = () => {
           </div>
         ))}
       </div>
-      <div className="flex space-x-4  pt-10 translate-x-[-5%]">
+      <div className="flex space-x-10 pt-20 translate-x-[-5%]">
         {galleryListRow2.map((image, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-[444px] h-[306px] bg-[#C7D0D9] px-[48px] py-[56px] shadow-lg"
+            className="flex-shrink-0 w-[444px] h-[306px] bg-[#C7D0D9] px-[48px] py-[56px] shadow-lg hover:shadow-2xl cursor-pointer"
           >
             <img
               src={image.src}
