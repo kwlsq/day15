@@ -25,7 +25,9 @@ const Navbar = () => {
 
   return (
     <Navbar>
-      <NavText>@Ayush Barnwal</NavText>
+      <NavText>
+        <NavLink to="/">@Ayush Barnwal</NavLink>
+      </NavText>
       <FlexSpaceBetween>
         <NavText>
           <NavLink to="/">About</NavLink>
