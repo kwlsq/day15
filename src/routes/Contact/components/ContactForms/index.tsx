@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import ButtonCapsule from "../../../../components/ButtonCapsule";
+import { postContactForm } from "../../../../services/contact";
 
 const ContactForms = () => {
   return (
@@ -23,9 +24,16 @@ const ContactForms = () => {
           subject: Yup.string().required("Subject is required"),
           message: Yup.string().required("Message is required"),
         })}
-        onSubmit={(values, { setSubmitting }) => {
-          console.log(values)
-          setSubmitting(false);
+        onSubmit={async (values, { setSubmitting, resetForm }) => {
+          try {
+            await postContactForm(values);
+            alert("Message sent successfully!");
+            resetForm();
+          } catch (error) {
+            alert("Error sending message. Please try again." + error);
+          } finally {
+            setSubmitting(false);
+          }
         }}
       >
         {({ isSubmitting }) => (
@@ -37,7 +45,7 @@ const ContactForms = () => {
               type="text"
               name="name"
               placeholder="James Robert"
-              className="w-full p-2 border-b border-b-red-[#0B0C0E] focus:outline-none text-[27px]"
+              className="w-full p-2 border-b border-[#0B0C0E] focus:outline-none text-[27px]"
             />
             <ErrorMessage
               name="name"
@@ -51,8 +59,8 @@ const ContactForms = () => {
             <Field
               type="email"
               name="email"
-              placeholder="ayush.barnwal@brightscout.com"
-              className="w-full p-2 border-b border-b-red-[#0B0C0E] focus:outline-none text-[27px]"
+              placeholder="your.email@example.com"
+              className="w-full p-2 border-b border-[#0B0C0E] focus:outline-none text-[27px]"
             />
             <ErrorMessage
               name="email"
@@ -66,8 +74,8 @@ const ContactForms = () => {
             <Field
               type="text"
               name="subject"
-              placeholder="For web design work Enquire"
-              className="w-full p-2 border-b border-b-red-[#0B0C0E] focus:outline-none text-[27px]"
+              placeholder="Your Subject"
+              className="w-full p-2 border-b border-[#0B0C0E] focus:outline-none text-[27px]"
             />
             <ErrorMessage
               name="subject"
@@ -82,14 +90,15 @@ const ContactForms = () => {
               as="textarea"
               name="message"
               rows={4}
-              placeholder="Type your Message"
-              className="w-full p-2 border-b border-b-red-[#0B0C0E] focus:outline-none resize-none text-[27px]"
+              placeholder="Type your message..."
+              className="w-full p-2 border-b border-[#0B0C0E] focus:outline-none resize-none text-[27px]"
             />
             <ErrorMessage
               name="message"
               component="div"
               className="text-red-500 text-[12px]"
             />
+
             <ButtonCapsule
               text="Submit"
               bgColor="#0B0C0E"
@@ -97,7 +106,7 @@ const ContactForms = () => {
               fontColor="#F4F7FA"
               disabled={isSubmitting}
               marginTop="2em"
-            ></ButtonCapsule>
+            />
           </Form>
         )}
       </Formik>
