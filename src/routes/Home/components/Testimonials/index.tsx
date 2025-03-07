@@ -1,9 +1,8 @@
 import { testimonialsList } from "../../../../consts/TestimonialsList";
-import { TextWrapper } from "../../../../consts/UtilStyling";
 
 const TestimonialSection = () => {
   return (
-    <TextWrapper>
+    <div className="box-border px-[8.5em] py-[8em] w-screen flex justify-between">
       <h3 className="text-[40px] font-medium">Testimonials</h3>
       <div className="ml-50 flex flex-col gap-15">
         {testimonialsList.map((testimonial, index) => (
@@ -24,7 +23,7 @@ const TestimonialSection = () => {
           </div>
         ))}
       </div>
-    </TextWrapper>
+    </div>
   );
 };
 
