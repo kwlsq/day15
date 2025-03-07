@@ -1,6 +1,13 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080"; 
+const API_BASE_URL = "http://localhost:8080";
+
+export interface formDataInterface {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 export const getContactForms = async () => {
   try {
@@ -12,12 +19,7 @@ export const getContactForms = async () => {
   }
 };
 
-export const postContactForm = async (formData: {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}) => {
+export const postContactForm = async (formData: formDataInterface) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/contacts`, formData);
     return response.data;
